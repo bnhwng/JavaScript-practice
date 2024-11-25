@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Variables</title>
+  <script src="/App.js"></script>
+</head>
+<body>
+  <p id="Cart">Cart Quanity</p>
+  <button onclick='console.log(`Cart Quanity: ${cartQuanity}`);' id="quanity">Show quanity</button>
+  <button id="add-to-cart"
+  onclick="cartQuanity++;">Add to Cart</button>
+  <button onclick="cartQuanity+=2;" id="+2">+2</button>
+  <button onclick="cartQuanity+=3" id="+3">+3</button>
+  <button id="reset-button"
+  onclick="cartQuanity=0; console.log('cart is reset')">Reset Cart</button>
+  <button onclick="console.clear();">Clear</button>
+
+</body>
+</html>
