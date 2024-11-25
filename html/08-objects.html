@@ -4,11 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rock Paper Scissors</title>
-  <script src="/script/Boolean.js" defer></script>
+  <script src="/script/Objects.js" defer></script>
+  <link rel="stylesheet" href="/css/rockpaperscissors.css">
 </head>
 <body>
   <h1>Rock Paper Scissors</h1>
-
+  <p id="computer-move"></p>
   <button onclick="selectChoice(0)">
     Rock
   </button>
@@ -24,15 +25,16 @@
   <button onclick="reset()">
     Reset
   </button>
+  
+
+  
+  <p>
+    Score: wins - <span class="wins" id="wins"></span> |  loses - <span class="loses" id="loses"></span> | ties - <span id="ties"></span>
+  </p>
 
 
-  <!-- terinary statement -->
-  <script>
-    const result = 0 ? 'truthy' : 'falsy'
-    const message = 5 && 'hello';
 
-    const currency = 5>0 || 'USD';
-    console.log(currency);
-  </script>
+  <h1>Objects</h1>
+  <p id='display'></p>
 </body>
 </html>
