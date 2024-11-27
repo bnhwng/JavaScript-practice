@@ -84,6 +84,26 @@ const object1 ={
   occupation: 'software engineer',
 }
 
+const object2 ={
+  message: 'Good job',
+  price: 799
+}
+
+const {message,price} = object2;
+console.log(message);
+console.log(price);
+
+const object3={
+  message: message,
+  price: price,
+  method(){
+    console.log('dit me may')
+  }
+}
+object3.method();
+
+console.log(object3);
+
 document.getElementById('display').innerHTML =
 `Name: ${object1.name}, <br>
 Age: ${object1.age},<br>
